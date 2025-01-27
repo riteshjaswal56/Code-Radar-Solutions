@@ -5,9 +5,9 @@ char* welcome() {
 }
 
 int main() {
-    int c;
+    float c;
     printf("Enter the number");
-    scanf("%d",$c);
-    prinf("You entered:%d\n",c);
+    scanf("%f",$c);
+    prinf("You entered:%f\n",c);
     return 0;
 }
