@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    if(true){
-        printf("HI");
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(a>b){
+        printf("True");
     }else{
-        printf("No hello");
+        printf("False");
     }
     return 0;
 }
