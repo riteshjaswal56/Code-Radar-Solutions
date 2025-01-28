@@ -9,6 +9,5 @@ int main() {
     else{
         printf("Not Eligible");
     }
-    printf("%s", welcome());
     return 0;
 }
