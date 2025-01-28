@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    char a;
-    scanf("%c",&a);
-    if(a,e,i,o,u){
+    char ch;
+    scanf("%c",&ch);
+    if(ch==a || ch==e || ch==i || ch==o || ch==u){
         printf("Vowel");
     }
     else{
