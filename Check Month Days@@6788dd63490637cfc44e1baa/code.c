@@ -13,5 +13,8 @@ int main() {
     else if(a==1||a==3||a==5||a==7||a==8||a==10||a==12){
         printf("31");
     }
+    else{
+        printf("Invalid");
+    }
     return 0;
 }
