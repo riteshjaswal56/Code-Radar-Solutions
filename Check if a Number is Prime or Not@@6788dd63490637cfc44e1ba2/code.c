@@ -3,7 +3,7 @@
 int main() {
     int a,is_prime = 1;
     scanf("%d",&numb);
-    for (int i=2;i<a;i++){
+    for (int i=2;i<=a/2;i++){
         if (a%i==0){
             is_prime = 0;
             break;
