@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int a,is_prime = 1;
-    scanf("%d",&a);
-    for (int i=2;i<=a/2;i++){
-        if (a%i==0){
+    int num,is_prime = 1;
+    scanf("%d",&num);
+    for (int i=2;i<num;i++){
+        if (num%i==0){
             is_prime = 0;
             break;
         }
