@@ -20,6 +20,6 @@ int main() {
     else{
         printf("Not Prime");
     }
-    retrun 0;
+    return 0;
  
 }
