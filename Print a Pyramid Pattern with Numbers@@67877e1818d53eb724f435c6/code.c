@@ -12,11 +12,11 @@ int main() {
         }
         // Print numbers
         for (j = 1; j <= i; j++) {
-            printf("%d ", j);
+            printf("%d", j);
         }
         // Print numbers in reverse (to complete the pyramid row)
         for (j = i - 1; j >= 1; j--) {
-            printf("%d ", j);
+            printf("%d", j);
         }
         printf("\n");
     }
