@@ -17,26 +17,26 @@ int main() {
     switch (operator) {
         case '+':
             result = num1 + num2;
-            printf("The result is: %d\n", result);
+            printf(result);
             break;
         case '-':
             result = num1 - num2;
-            printf("The result is: %d\n", result);
+            printf(result);
             break;
         case '*':
             result = num1 * num2;
-            printf("The result is: %d\n", result);
+            printf(result);
             break;
         case '/':
             if (num2 != 0) {
                 result = num1 / num2;
-                printf("The result is: %d\n", result);
+                printf(result);
             } else {
-                printf("Error: Division by zero is not allowed.\n");
+                printf("Error\n");
             }
             break;
         default:
-            printf("Invalid operator. Please use +, -, *, or /.\n");
+            printf("Invalid operator\n");
     }
 
     return 0;
