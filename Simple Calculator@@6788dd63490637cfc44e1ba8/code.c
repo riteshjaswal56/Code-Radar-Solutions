@@ -1,43 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2;
-    char operator;
-    int result;
-
-    // Asking for input
-    printf("Enter the first integer: ");
-    scanf("%d", &num1);
-    printf("Enter the second integer: ");
-    scanf("%d", &num2);
-    printf("Enter the arithmetic operation (+, -, *, /): ");
-    scanf(" %c", &operator);
-
-    // Performing the operation
-    switch (operator) {
-        case '+':
-            result = num1 + num2;
-            printf(result);
+    int a,b;
+    char c;
+    scanf("%d %d %c",&a,&b,&c);
+    switch(c){
+        case'+':
+            printf("%d",a,b,a+b);
             break;
-        case '-':
-            result = num1 - num2;
-            printf(result);
+        case'-':
+            printf("%d",a-b);
             break;
-        case '*':
-            result = num1 * num2;
-            printf(result);
+        case'*':
+            printf("%d",a*b);
             break;
-        case '/':
-            if (num2 != 0) {
-                result = num1 / num2;
-                printf(result);
-            } else {
-                printf("Error\n");
-            }
+        case'/':
+            printf("%d",a/b);
             break;
-        default:
-            printf("Invalid operator\n");
+        
     }
-
     return 0;
 }
