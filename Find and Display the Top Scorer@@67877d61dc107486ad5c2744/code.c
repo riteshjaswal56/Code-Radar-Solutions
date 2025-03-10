@@ -21,9 +21,9 @@ int main() {
     }
 
     printf("Top Scorer:\n");
-    printf("Roll Number: %d\n", students[topIndex].rollNumber);
-    printf("Name: %s\n", students[topIndex].name);
-    printf("Marks: %.2f\n", students[topIndex].marks);
+    printf("Roll Number: %d", students[topIndex].rollNumber);
+    printf("Name: %s", students[topIndex].name);
+    printf("Marks: %.2f", students[topIndex].marks);
 
     return 0;
 }
