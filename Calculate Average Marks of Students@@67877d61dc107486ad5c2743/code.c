@@ -6,13 +6,14 @@ struct student{
 }
 int main(){
     int a,i,average;
+    float totalmarks,average
     scanf("%d",&a);
     struct student students[a];
     for (int i=0;i<a;i++){
         scanf("%d %s %f",& students[i].rollno,& students[i].name,& students[i].marks);
     }
     for (int i=0;i<a;i++){
-        students[i]marks += students[i]marks;
+        totalmarks += students[i]marks;
     }
     average = students[i]marks / n;
     printf("Average Marks: %d/n",average);
