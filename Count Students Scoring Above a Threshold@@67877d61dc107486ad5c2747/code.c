@@ -6,7 +6,8 @@ struct Student {
 };
 
 int main() {
-    int n, i,a,count = 0;
+    int n, i,count = 0;
+    float a;
     scanf("%d %f", &n,&a);
     struct Student students[n];
     
@@ -20,7 +21,7 @@ int main() {
         }
     }
 
-    printf("Count of students scoring above %f: ",count);
+    printf("Count of students scoring above %.2f: %d\n",a,count);
 
     return 0;
 }
