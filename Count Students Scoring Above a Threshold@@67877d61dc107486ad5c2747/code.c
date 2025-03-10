@@ -8,7 +8,7 @@ struct Student {
 int main() {
     int n, i,count = 0;
     float threshold;
-    scanf("%d %f ", &n,&threshold);
+    scanf("%d %f",&n,&threshold);
     struct Student students[n];
     
     for (i = 0; i < n; i++) {
@@ -19,6 +19,6 @@ int main() {
             count++;
         }
     }
-    printf("Count of students scoring above %f: %d\n",threshold,count);
+    printf("Count of students scoring above %.2f: %d\n",threshold,count);
     return 0;
 }
