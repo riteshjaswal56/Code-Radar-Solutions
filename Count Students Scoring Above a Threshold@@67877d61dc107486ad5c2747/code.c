@@ -19,6 +19,6 @@ int main() {
             count++;
         }
     }
-    printf("Count of students scoring above 90.00: %d\n",threshold,count);
+    printf("Count of students scoring above %f: %d\n",threshold,count);
     return 0;
 }
