@@ -15,12 +15,10 @@ int main() {
     }
 
     for (i = 1; i < n; i++) {
-        if (students[i].marks>80.00) {
-            lowmarks = i;
-        }
+        if (students[i].marks>80.00) 
     }
 
-    printf("count of students scoring above 80,00: ");
+    printf("Count of students scoring above 80,00: ");
 
     return 0;
 }
