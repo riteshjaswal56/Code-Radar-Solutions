@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int rows, i, j, space;
-        scanf("%d", &rows);
+    int rows, i, j;
+    scanf("%d", &rows);
     for (i = 1; i <= rows; i++) {
-        for (space = 1; space <= rows - i; space++) {
+        for (j = 1; j <= rows - i; j++) {
             printf(" ");
         }
         for (j = 1; j <= i; j++) {
