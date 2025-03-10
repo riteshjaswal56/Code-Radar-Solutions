@@ -25,8 +25,6 @@ int main() {
                 printf("error\n");
             }
             break;
-        default:
-            printf("Invalid operator. Please use +, -, *, or /.\n");
     }
     return 0;
 }
