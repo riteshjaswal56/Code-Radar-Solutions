@@ -1,5 +1,5 @@
 #include <stdio.h>
-struct students{
+struct student{
     int rollno;
     char name[50];
     float marks;
@@ -7,7 +7,7 @@ struct students{
 int main(){
     int a,i,average;
     scanf("%d",&a);
-
+    struct student students[a]
     for (int i=0;i<a;i++){
         scanf("%d %s %f",& students[i].roll no,& students[i].name,& students[i].marks);
     }
