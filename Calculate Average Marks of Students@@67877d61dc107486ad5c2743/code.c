@@ -3,7 +3,7 @@ struct student{
     int rollno;
     char name[50];
     float marks;
-}
+};
 int main(){
     int a,i;
     float totalmarks,average
