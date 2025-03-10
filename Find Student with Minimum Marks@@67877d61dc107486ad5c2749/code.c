@@ -6,7 +6,7 @@ struct Student {
 };
 
 int main() {
-    int n, i, lowIndex = 0;
+    int n, i, lowmarks = 0;
     scanf("%d", &n);
     struct Student students[n];
     
@@ -15,15 +15,15 @@ int main() {
     }
 
     for (i = 1; i < n; i++) {
-        if (students[i].marks < students[lowIndex].marks) {
-            lowIndex = i;
+        if (students[i].marks < students[lowmarks].marks) {
+            lowmarks = i;
         }
     }
 
     printf("Student with Minimum Marks: ");
-    printf("Roll Number: %d", students[lowIndex].rollNumber);
-    printf(", Name: %s", students[lowIndex].name);
-    printf(", Marks: %.2f", students[lowIndex].marks);
+    printf("Roll Number: %d", students[lowmarks].rollNumber);
+    printf(", Name: %s", students[lowmarks].name);
+    printf(", Marks: %.2f", students[lowmarks].marks);
 
     return 0;
 }
