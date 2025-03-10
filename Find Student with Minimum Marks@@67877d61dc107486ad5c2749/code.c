@@ -16,14 +16,14 @@ int main() {
 
     for (i = 1; i < n; i++) {
         if (students[i].marks < students[lowIndex].marks) {
-            topIndex = i;
+            lowIndex = i;
         }
     }
 
     printf("Top Scorer: ");
-    printf("Roll Number: %d", students[topIndex].rollNumber);
-    printf(", Name: %s", students[topIndex].name);
-    printf(", Marks: %.2f", students[topIndex].marks);
+    printf("Roll Number: %d", students[lowIndex].rollNumber);
+    printf(", Name: %s", students[lowIndex].name);
+    printf(", Marks: %.2f", students[lowIndex].marks);
 
     return 0;
 }
