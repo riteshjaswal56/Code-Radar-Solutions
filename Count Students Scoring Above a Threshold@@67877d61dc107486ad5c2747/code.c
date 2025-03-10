@@ -6,8 +6,8 @@ struct Student {
 };
 
 int main() {
-    int n, i;
-    scanf("%d", &n);
+    int n, i,number;
+    scanf("%d %f", &n,&number);
     struct Student students[n];
     
     for (i = 0; i < n; i++) {
@@ -15,7 +15,9 @@ int main() {
     }
 
     for (i = 1; i < n; i++) {
-        if (students[i].marks>80.00) 
+        if (students[i].marks>number) {
+            number=i;
+        }
     }
 
     printf("Count of students scoring above 80,00: ");
