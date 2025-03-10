@@ -5,7 +5,7 @@ struct student{
     float marks;
 }
 int main(){
-    int a,i,average;
+    int a,i;
     float totalmarks,average
     scanf("%d",&a);
     struct student students[a];
@@ -15,6 +15,7 @@ int main(){
     for (int i=0;i<a;i++){
         totalmarks += students[i]marks;
     }
-    average = students[i]marks / n;
-    printf("Average Marks: %d/n",average);
+    average = totalmarks / n;
+    printf("Average Marks: %.2f/n",average);
+    return 0;
 }
