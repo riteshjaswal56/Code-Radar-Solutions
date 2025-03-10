@@ -17,9 +17,9 @@ int main() {
             result = a*b;
             printf("%d",result);
             break;
-                case '/':
-            if (num2 != 0) {
-                result = num1 / num2;
+        case '/':
+            if (b != 0) {
+                result = a / b;
                 printf("%d",result);
             } else {
                 printf("Error: Division by zero is not allowed.\n");
