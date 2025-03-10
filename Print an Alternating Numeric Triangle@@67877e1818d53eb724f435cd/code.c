@@ -9,10 +9,10 @@ int main(){
         }
         printf("\n");
         if (i%2==0){
-            num=0;
+            num=1;
         }
         else{
-            num=1;
+            num=0;
         }
     }
 
