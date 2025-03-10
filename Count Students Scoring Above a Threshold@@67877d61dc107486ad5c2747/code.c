@@ -8,7 +8,7 @@ struct Student {
 int main() {
     int n, i,count = 0;
     float a;
-    scanf("%d %f %d", &n,&a,&count);
+    scanf("%d %f ", &n,&a);
     struct Student students[n];
     
     for (i = 0; i < n; i++) {
