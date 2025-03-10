@@ -6,7 +6,7 @@ struct student{
 };
 int main(){
     int a,i;
-    float totalmarks,average
+    float totalmarks,average;
     scanf("%d",&a);
     struct student students[a];
     for (int i=0;i<a;i++){
