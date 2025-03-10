@@ -16,7 +16,7 @@ int main() {
 
     for (i = 1; i < n; i++) {
         if (students[i].marks>number) {
-            number=i;
+            count++;
         }
     }
 
