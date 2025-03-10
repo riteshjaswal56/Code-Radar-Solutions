@@ -20,7 +20,7 @@ int main() {
         }
     }
 
-    printf("Count of students scoring above %f: ");
+    printf("Count of students scoring above %f: ",count);
 
     return 0;
 }
