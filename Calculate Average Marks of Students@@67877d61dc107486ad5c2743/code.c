@@ -7,7 +7,7 @@ struct student{
 int main(){
     int a,i,average;
     scanf("%d",&a);
-    struct student students[a]
+    struct student students[a];
     for (int i=0;i<a;i++){
         scanf("%d %s %f",& students[i].roll no,& students[i].name,& students[i].marks);
     }
