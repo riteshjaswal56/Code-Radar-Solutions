@@ -20,7 +20,7 @@ int main() {
         }
     }
 
-    printf("Top Scorer: ");
+    printf("Student with Minimum Marks: ");
     printf("Roll Number: %d", students[lowIndex].rollNumber);
     printf(", Name: %s", students[lowIndex].name);
     printf(", Marks: %.2f", students[lowIndex].marks);
