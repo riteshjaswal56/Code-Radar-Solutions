@@ -8,6 +8,13 @@ int main(){
             num = 1-num;
         }
         printf("\n");
+        if (i%2==0){
+            num=0;
+        }
+        else{
+            num=1;
+        }
     }
+
     return 0;
 }
