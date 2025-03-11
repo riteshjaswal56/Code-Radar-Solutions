@@ -19,7 +19,7 @@ int main(){
             break;
         }
     }
-    if(student[i].marks != a){
+    if(students[i].marks != a){
         printf("Student not found");
     }
 }
