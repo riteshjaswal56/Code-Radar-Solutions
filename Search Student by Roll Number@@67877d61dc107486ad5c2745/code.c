@@ -18,7 +18,6 @@ int main(){
             printf("Name: %s",students[i].name);
             printf("Marks: %f",students[i].marks);
             break;
-
         }
     }
     if(!found){
