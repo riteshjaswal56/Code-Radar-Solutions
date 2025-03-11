@@ -17,7 +17,7 @@ int main() {
     for (i = 1; i < n; i++) {
         if(students[i].marks < 50 ){
         allpassed = 0;
-        break;
+        
         }
     }
      if (allpassed) {
