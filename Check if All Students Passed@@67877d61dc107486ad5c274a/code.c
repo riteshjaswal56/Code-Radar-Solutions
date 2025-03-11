@@ -6,7 +6,7 @@ struct Student {
 };
 
 int main() {
-    int n, i , allpassed = 1;
+    int n, i , allpassed ;
     scanf("%d", &n);
     struct Student students[n];
     
