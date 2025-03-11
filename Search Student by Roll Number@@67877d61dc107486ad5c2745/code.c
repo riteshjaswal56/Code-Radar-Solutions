@@ -12,6 +12,10 @@ int main(){
     }
     scanf("%d",&a);
     for (int i=0;i<n;i++){
-        
+        if (students[i].marks == a){
+            printf("Roll Number: %d",students[i].rollno);
+            printf("Name: %s",students[i].name);
+            printf("Marks: %f",students[i].marks);
+        }
     }
 }
