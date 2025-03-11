@@ -6,18 +6,17 @@ struct Student {
 };
 
 int main() {
-    int n, i , allpassed = 1;
+    int n, allpassed = 1;
     scanf("%d", &n);
     struct Student students[n];
     
-    for (i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
     }
 
-    for (i = 1; i < n; i++) {
+    for (int i = 1; i < n; i++) {
         if(students[i].marks < 50 ){
-        allpassed = 0;
-        
+            allpassed = 0;
         }
     }
      if (allpassed) {
