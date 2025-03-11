@@ -6,7 +6,7 @@ struct Student {
 };
 
 int main() {
-    int n, i;
+    int n, i , allpassed = 1;
     scanf("%d", &n);
     struct Student students[n];
     
@@ -15,13 +15,16 @@ int main() {
     }
 
     for (i = 1; i < n; i++) {
-        if (students[i].marks > 50) {
+        allpassed = 0;
+        break;
+       
+    }
+     if (allpassed) {
             printf("All Passed");
         }
         else{
             printf("Not All Passed");
         }
-    }
 
     return 0;
 }
