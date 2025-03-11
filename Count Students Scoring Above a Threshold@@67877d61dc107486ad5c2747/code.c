@@ -9,17 +9,18 @@ int main() {
     int n, i,count = 0;
     float threshold;
     scanf("%d",&n);
-    scanf("%f",&threshold);
     struct Student students[n];
     
     for (i = 0; i < n; i++) {
         scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
     }
+    scanf("%f",&threshold);
+
     for (i = 0; i < n; i++) {
         if (students[i].marks > threshold) {
             count++;
         }
     }
-    printf("Count of students scoring above %f: %d\n",threshold,count);
+    printf("Count of students scoring above %.2f: %d\n",threshold,count);
     return 0;
 }
