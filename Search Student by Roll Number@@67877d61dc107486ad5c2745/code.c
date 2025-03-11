@@ -5,7 +5,7 @@ struct student{
     float marks;
 };
 int main(){
-    int n , a;
+    int n , a ;
     struct student students[n];
     for (int i=0;i<n;i++){
         scanf("%d %s %f",&students[i].rollno,&students[i].name,&students[i].marks);
@@ -16,6 +16,10 @@ int main(){
             printf("Roll Number: %d",students[i].rollno);
             printf("Name: %s",students[i].name);
             printf("Marks: %f",students[i].marks);
+            break;
         }
+    }
+    if(student[i].marks != a){
+        printf("Student not found");
     }
 }
