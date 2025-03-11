@@ -8,7 +8,8 @@ struct Student {
 int main() {
     int n, i,count = 0;
     float threshold;
-    scanf("%d %f",&n,&threshold);
+    scanf("%d",&n);
+    scanf("%f",&threshold);
     struct Student students[n];
     
     for (i = 0; i < n; i++) {
