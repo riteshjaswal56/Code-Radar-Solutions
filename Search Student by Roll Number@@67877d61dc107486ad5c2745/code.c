@@ -17,8 +17,9 @@ int main(){
             printf("Roll Number: %d",students[i].rollno);
             printf("Name: %s",students[i].name);
             printf("Marks: %f",students[i].marks);
-        }
             break;
+
+        }
     }
     if(!found){
         printf("Student not found");
