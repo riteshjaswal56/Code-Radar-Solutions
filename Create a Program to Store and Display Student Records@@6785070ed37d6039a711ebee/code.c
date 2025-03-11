@@ -6,24 +6,17 @@ struct Student {
 };
 
 int main() {
-    int n, searchRoll;
+    int n, i;
     scanf("%d", &n);
     struct Student students[n];
-    for (int i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) {
         scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
     }
-    scanf("%d", &searchRoll);
-    int found = 0;
-    for (int i = 0; i < n; i++) {
-        if (students[i].rollNumber == searchRoll) {
-            printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].rollNumber, students[i].name, students[i].marks);
-            found = 1;
-            break;
-        }
-    }
 
-    if (!found) {
-        printf("Student not found\n");
+    for (i = 0; i < n; i++) {
+        printf("Roll Number: %d,", students[i].rollNumber);
+        printf(" Name: %s,", students[i].name);
+        printf(" Marks: %.2f \n", students[i].marks);
     }
 
     return 0;
