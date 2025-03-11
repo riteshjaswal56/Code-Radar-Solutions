@@ -5,7 +5,7 @@ struct student{
     float marks;
 };
 int main(){
-    int n , a ,found = 1;
+    int n , a ,found = 0;
     struct student students[n];
     for (int i=0;i<n;i++){
         scanf("%d %s %f",&students[i].rollno,&students[i].name,&students[i].marks);
