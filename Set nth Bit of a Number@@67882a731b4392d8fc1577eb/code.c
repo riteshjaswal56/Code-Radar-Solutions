@@ -7,7 +7,7 @@ int main() {
     scanf("%d", &n);
 
     int result = number | (1 << n);
-    printf("The result after setting bit %d to 1 is: %d\n", n, result);
+    printf("%d\n", n, result);
 
     return 0;
 }
