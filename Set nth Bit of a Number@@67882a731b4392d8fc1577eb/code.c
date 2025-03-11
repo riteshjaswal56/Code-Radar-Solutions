@@ -6,7 +6,7 @@ int main() {
     scanf("%d", &n);
 
     int result = number | (1 << n);
-    printf("%d\n", n, result);
+    printf("%d",result);
 
     return 0;
 }
