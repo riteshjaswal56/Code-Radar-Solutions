@@ -18,8 +18,9 @@ int main(){
             printf("Marks: %f",students[i].marks);
             break;
         }
-    }
-    if(students[i].marks != a){
+        else if(students[i].marks != a){
         printf("Student not found");
     }
+    }
+
 }
