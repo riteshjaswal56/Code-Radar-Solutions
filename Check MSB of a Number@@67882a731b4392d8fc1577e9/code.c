@@ -1,12 +1,11 @@
 #include <stdio.h>
 int main(){
-    int num1 ,count = 0;
+    int num1 ;
     scanf("%d",&num1);
     while(!(num1 & 0x8000000000)){
         num1 = num1<<1;
-        count ++;
     }
-    if(count ==1){
+    if(num1 & 0x8000000000){
         printf("Set");
     }
     else{
