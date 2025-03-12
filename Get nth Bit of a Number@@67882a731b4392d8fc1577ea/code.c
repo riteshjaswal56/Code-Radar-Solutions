@@ -6,7 +6,7 @@ int main() {
 
     unsigned int nth_bit = (number >> n) & 1;
 
-    printf("The %uth bit of %u is: %u\n", n, number, nth_bit);
+    printf("%u\n",nth_bit);
 
     return 0;
 }
