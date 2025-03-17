@@ -2,7 +2,6 @@
 #include<string.h>
 int main(){
     char str[100];
-    printf("Enter a string: ");
     scanf("%s",str);
     int i=0;
     int j=strlen(str)-1;
