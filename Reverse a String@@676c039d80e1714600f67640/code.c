@@ -3,15 +3,8 @@
 int main(){
     char str[100];
     scanf("%s",str);
-    int i=0;
-    int j=strlen(str)-1;
-    while(i<j){
-        char temp=str[i];
-        str[i]=str[j];
-        str[j]=temp;
-        i++;
-        j--;
-    }
+    for (int i=0,i>=0;i--){
     printf("%s",str);
+    }
     return 0;
 }
