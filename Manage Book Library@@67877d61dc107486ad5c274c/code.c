@@ -9,7 +9,7 @@ int main() {
     int n,i;
     float a;
     scanf("%d %f",&n,&a);
-    printf("Books above price %f:",a);
+    printf("Books above price %f\n:",a);
     struct library libraries[n];
     for (i = 0; i < n; i++) {
         scanf("%s %s %f", &libraries[i].book, &libraries[i].author, &libraries[i].price);
