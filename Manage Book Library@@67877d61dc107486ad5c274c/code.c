@@ -7,11 +7,10 @@ struct library {
 
 int main() {
     int n,i;
-    scanf("%d",&n);   
-    printf("Books above price %f:\n",a);
-    
     float a;
     scanf("%f",&a);
+    scanf("%d",&n);   
+    printf("Books above price %f:\n",a);
     struct library libraries[n];
     for (i = 0; i < n; i++) {
         scanf("%s %s %f", &libraries[i].book, &libraries[i].author, &libraries[i].price);
