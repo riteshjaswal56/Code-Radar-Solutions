@@ -6,8 +6,8 @@ struct library {
 };
 
 int main() {
-    int n, i;
-    scanf("%d", &n);
+    int n, i , a;
+    scanf("%d %d", &n , &a);
     struct library libraries[n];
     for (i = 0; i < n; i++) {
         scanf("%d %s %f", &libraries[i].book, &libraries[i].author, &libraries[i].price);
@@ -16,7 +16,7 @@ int main() {
     for (i = 0; i < n; i++) {
         printf("Book: %d,", libraries[i].book);
         printf("Author: %s,", libraries[i].author);
-        printf("Price: %.2f \n", libraries[i].price);
+        printf("Price: %f\n", libraries[i].price);
     }
 
     return 0;
