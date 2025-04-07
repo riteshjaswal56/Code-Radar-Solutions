@@ -12,7 +12,7 @@ int main() {
     printf("Books above price %f:",a);
     struct library libraries[n];
     for (i = 0; i < n; i++) {
-        scanf("%s %s %f", &libraries[i].book, &libraries[i].author, &libraries[i].price);
+        scanf("%s %s %f\n", &libraries[i].book, &libraries[i].author, &libraries[i].price);
     }
     for (i = 0; i < n; i++) {
         if (libraries[i].price > a) {
