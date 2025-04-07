@@ -8,6 +8,7 @@ struct library {
 int main() {
     int n, i , a;
     scanf("%d %d", &n , &a);
+    printf("Book above price %d",&a);
     struct library libraries[n];
     for (i = 0; i < n; i++) {
         scanf("%d %s %f", &libraries[i].book, &libraries[i].author, &libraries[i].price);
