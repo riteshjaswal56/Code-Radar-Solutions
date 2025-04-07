@@ -14,9 +14,9 @@ int main() {
     }
 
     for (i = 0; i < n; i++) {
-        printf("Roll Number: %d,", libraries[i].book);
-        printf(" Name: %s,", libraries[i].author);
-        printf(" Marks: %.2f \n", libraries[i].price);
+        printf("Book: %d,", libraries[i].book);
+        printf("Author: %s,", libraries[i].author);
+        printf("Price: %.2f \n", libraries[i].price);
     }
 
     return 0;
