@@ -6,7 +6,8 @@ struct library {
 };
 
 int main() {
-    int n,i,a;
+    int n,i;
+    float a;
     scanf("%d %f", &n , &a);
     printf("Books above price %f:",a);
     struct library libraries[n];
