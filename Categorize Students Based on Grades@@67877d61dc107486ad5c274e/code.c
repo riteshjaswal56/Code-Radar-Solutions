@@ -2,7 +2,7 @@
 struct Student {
     int rollNumber;
     char name[50];
-    char grades;
+    char grades[50];
 };
 
 int main() {
