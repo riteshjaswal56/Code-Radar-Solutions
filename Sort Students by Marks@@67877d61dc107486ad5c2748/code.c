@@ -21,6 +21,11 @@ int main() {
             }
         }
     }
+    for (i = 0; i < n; i++) {
+        printf("Roll Number: %d,", students[i].rollNumber);
+        printf(" Name: %s,", students[i].name);
+        printf(" Marks: %.2f \n", students[i].marks);
+    }
 
     return 0;
 }
