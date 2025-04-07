@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 struct library {
     char book[50];
     char author[50];
@@ -6,19 +7,30 @@ struct library {
 };
 
 int main() {
-    int n,i;
+    int n, i;
     float a;
-    scanf("%d %f", &n , &a);
-    printf("Books above price %f:",a);
+
+    scanf("%d %f", &n, &a);
+    getchar(); // Consume newline character after scanf.
+
+    printf("Books above price %.2f:\n", a);
     struct library libraries[n];
+
     for (i = 0; i < n; i++) {
-        scanf("%s %s %f", &libraries[i].book, &libraries[i].author, &libraries[i].price);
+        printf("Enter details of book %d (title, author, price):\n", i + 1);
+        fgets(libraries[i].book, sizeof(libraries[i].book), stdin);
+        fgets(libraries[i].author, sizeof(libraries[i].author), stdin);
+        scanf("%f", &libraries[i].price);
+        getchar(); // Consume newline character after reading price.
     }
+
     for (i = 0; i < n; i++) {
         if (libraries[i].price > a) {
-            printf("Title: %s, Author: %s, Price: %.2f\n", libraries[i].book, libraries[i].author, libraries[i].price);
+            printf("Title: %s", libraries[i].book); // fgets includes newline character.
+            printf("Author: %s", libraries[i].author);
+            printf("Price: %.2f\n", libraries[i].price);
         }
     }
-    return 0;
 
+    return 0;
 }
