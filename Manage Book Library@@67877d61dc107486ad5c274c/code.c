@@ -1,6 +1,6 @@
 #include <stdio.h>
 struct library {
-    int book;
+    char book[50];
     char author[50];
     float price;
 };
@@ -16,7 +16,7 @@ int main() {
     }
     for (i = 0; i < n; i++) {
         if (libraries[i].price > a) {
-            printf("Book: %d, Author: %s, Price: %.2f\n", libraries[i].book, libraries[i].author, libraries[i].price);
+            printf("Book: %s, Author: %s, Price: %.2f\n", libraries[i].book, libraries[i].author, libraries[i].price);
         }
     }
     return 0;
