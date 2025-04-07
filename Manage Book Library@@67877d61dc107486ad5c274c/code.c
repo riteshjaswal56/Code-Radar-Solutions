@@ -8,8 +8,10 @@ struct library {
 int main() {
     int n,i;
     float a;
+    
+    scanf("%d",&n); 
     scanf("%f",&a);
-    scanf("%d",&n);   
+     
     printf("Books above price %f:\n",a);
     struct library libraries[n];
     for (i = 0; i < n; i++) {
