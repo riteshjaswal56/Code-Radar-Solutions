@@ -16,7 +16,7 @@ int main() {
     }
     for (i = 0; i < n; i++) {
         if (libraries[i].price > a) {
-            printf("Title: %s, Author: %s, Price: %.2f\n", libraries[i].book, libraries[i].author, libraries[i].price);
+            printf("Title: %s\n, Author: %s, Price: %.2f\n", libraries[i].book, libraries[i].author, libraries[i].price);
         }
     }
     return 0;
