@@ -17,7 +17,6 @@ int main() {
     struct library libraries[n];
 
     for (i = 0; i < n; i++) {
-        printf("Enter details of book %d (title, author, price):\n", i + 1);
         fgets(libraries[i].book, sizeof(libraries[i].book), stdin);
         fgets(libraries[i].author, sizeof(libraries[i].author), stdin);
         scanf("%f", &libraries[i].price);
