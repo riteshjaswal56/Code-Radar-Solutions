@@ -4,7 +4,7 @@ struct temperature{
     int temperature;
 };
 int main(){
-    int n;
+    int n=7;
     float average = 0;
     struct temperature temp[100];
     for (int i=0;i<n;i++){
