@@ -20,9 +20,9 @@ int main() {
         else{
             data = 0.02;
         }
-        bonus[i].salary += bonus[i].salary * data;
-
     }
+    bonus[i].salary += bonus[i].salary * data;
+    
     for (i = 0; i < n; i++) {
         printf("Employee ID: %d,", bonus[i].number);
         printf(" Name: %s,", bonus[i].name);
