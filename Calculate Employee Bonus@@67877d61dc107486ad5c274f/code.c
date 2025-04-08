@@ -13,14 +13,6 @@ int main() {
     for (i = 0; i < n; i++) {
         scanf("%d %s %f", &bonus[i].number, &bonus[i].name, &bonus[i].salary);
     } 
-    for (i = 0; i < n; i++) {
-        if (bonus[i].salary < 50000) {
-            data = 0.1;
-        }
-        else{
-            data = 0.02;
-        }
-    }
     bonus[i].salary += bonus[i].salary * data;
     
     for (i = 0; i < n; i++) {
