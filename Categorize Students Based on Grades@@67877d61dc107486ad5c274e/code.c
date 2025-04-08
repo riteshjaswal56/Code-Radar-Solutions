@@ -6,8 +6,8 @@ struct Student {
 };
 
 int main() {
-    char n, i;
-    scanf("%s", &n);
+    int n, i;
+    scanf("%d", &n);
     struct Student students[n];
     for (i = 0; i < n; i++) {
         scanf("%d %s %s", &students[i].rollNumber, students[i].name, &students[i].grades);
