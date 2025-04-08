@@ -14,7 +14,7 @@ int main(){
         average += temp[i].temperature;
     }
     average = average/n;
-    printf("Average temperature: %.2f",average);
+    printf("Average Temperature: %.2f",average);
     return 0;
     
 }
