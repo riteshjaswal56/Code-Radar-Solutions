@@ -4,7 +4,8 @@ struct temperature{
     int temperature;
 };
 int main(){
-    int n,average = 0;
+    int n;
+    float average = 0;
     struct temperature temp[100];
     for (int i=0;i<n;i++){
         scanf("%s %d",&temp[i].day,&temp[i].temperature);
@@ -13,7 +14,7 @@ int main(){
         average += temp[i].temperature;
     }
     average = average/n;
-    printf("Average temperature is : %d",average);
+    printf("Average temperature: %.2f",average);
     return 0;
     
 }
