@@ -6,13 +6,24 @@ struct Employee{
 };
 
 int main() {
-    int n, i;
+    int n, i ;
+    int data = 0;
     scanf("%d", &n);
     struct Employee bonus[n];
     for (i = 0; i < n; i++) {
         scanf("%d %s %f", &bonus[i].number, &bonus[i].name, &bonus[i].salary);
+    } 
+    for (i = 0; i < n; i++) {
+        if (bonus[i].salary < 50000) {
+            data = 0.1;
+        }
+        else{
+            data = 0.02;
+        }
     }
-
+    for (i = 0; i < n; i++) {
+        bonus[i].salary += bonus[i].salary * data;
+    }
     for (i = 0; i < n; i++) {
         printf(" Employee ID: %d,", bonus[i].number);
         printf(" Name: %s,", bonus[i].name);
