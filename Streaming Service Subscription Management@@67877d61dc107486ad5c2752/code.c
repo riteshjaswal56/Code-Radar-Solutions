@@ -12,7 +12,7 @@ int main(){
     int count_basic = 0, count_standard = 0, count_premium = 0;
     float revenue_basic = 0.0, revenue_standard = 0.0, revenue_premium = 0.0;
     for (i=0;i<n;i++){
-        scanf("%s %s %f",&service[i].name,&service[i].subscription,&service[i].revenue);
+        scanf("%c %c %f",&service[i].name,&service[i].subscription,&service[i].revenue);
         if(strcmp(service[i].subscription,"basic")==0){
             count_basic++;
             revenue_basic = service[i].revenue;
