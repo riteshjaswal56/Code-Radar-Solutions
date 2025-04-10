@@ -8,7 +8,6 @@ struct Rectangle {
 
 int main() {
     int n;
-    printf("Enter the number of rectangles: ");
     scanf("%d", &n);
 
     struct Rectangle rects[n];
