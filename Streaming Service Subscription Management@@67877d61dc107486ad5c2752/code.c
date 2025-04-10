@@ -6,7 +6,7 @@ struct management{
 };
 int main(){
     int n,i;
-    scamf("%d,&n");
+    scanf("%d,&n");
     struct management service[n];
     int count_basic = 0, count_standard = 0, count_premium = 0;
     float revenue_basic = 0.0, revenue_standard = 0.0, revenue_premium = 0.0;
