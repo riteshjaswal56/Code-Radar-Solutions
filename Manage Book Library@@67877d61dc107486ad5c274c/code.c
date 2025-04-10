@@ -9,12 +9,13 @@ int main() {
     int n,i;
     float a;
     scanf("%d",&n); 
-    scanf("%f",&a);
     printf("Books above price %.2f:\n",a);
     struct library libraries[n];
     for (i = 0; i < n; i++) {
         scanf("%s %s %f", &libraries[i].book, &libraries[i].author, &libraries[i].price);
     }
+    scanf("%f",&a);
+
     for (i = 0; i < n; i++) {
         if (libraries[i].price > a) {
             printf("Title: %s, Author: %s, Price: %.2f\n", libraries[i].book, libraries[i].author, libraries[i].price);
