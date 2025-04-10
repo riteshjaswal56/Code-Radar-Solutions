@@ -12,7 +12,7 @@ int main(){
         scanf("%s %s %d",&plaza[i].number,&plaza[i].vehicle,&plaza[i].toll);
     }
 
-    printf("Cars: %d, ",plaza[i].toll);
+    printf("Cars: %d.2f, ",plaza[i].toll);
     printf("Trucks: %d, ",plaza[i].toll);
     printf("Bikes: %d ",plaza[i].toll);
     
