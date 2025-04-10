@@ -10,19 +10,16 @@ struct Vehicle {
 int main() {
     int n;
     scanf("%d", &n);
-
     struct Vehicle vehicles[n];
-
-    int carToll = 0, truckToll = 0, bikeToll = 0;
-
+    int carToll , truckToll , bikeToll ;
     for (int i = 0; i < n; i++) {
         scanf("%s %s %d", vehicles[i].number, vehicles[i].type, &vehicles[i].toll);
 
-        if (strcmp(vehicles[i].type, "Car") == 0) {
+        if (strcmp(vehicles[i].type, "Car") ) {
             carToll += vehicles[i].toll;
-        } else if (strcmp(vehicles[i].type, "Truck") == 0) {
+        } else if (strcmp(vehicles[i].type, "Truck") ) {
             truckToll += vehicles[i].toll;
-        } else if (strcmp(vehicles[i].type, "Bike") == 0) {
+        } else if (strcmp(vehicles[i].type, "Bike") ) {
             bikeToll += vehicles[i].toll;
         }
     }
