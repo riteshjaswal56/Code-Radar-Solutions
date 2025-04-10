@@ -11,10 +11,10 @@ int main(){
     for (i=0 ; i<n ; i++){
         scanf("%s %s %d",&plaza[i].number,&plaza[i].vehicle,&plaza[i].toll);
     }
-    for (i=0 ; i<n ; i++){
-        printf("Cars: %.2f, ",plaza[i].vehicle);
-        printf("Trucks: %.2f, ",plaza[i].vehicle);
-        printf("Bikes: %.2f, ",plaza[i].vehicle);
-    }
+
+    printf("Cars: %.2f, ",plaza[i].vehicle);
+    printf("Trucks: %.2f, ",plaza[i].vehicle);
+    printf("Bikes: %.2f, ",plaza[i].vehicle);
+    
     return 0;
 }
