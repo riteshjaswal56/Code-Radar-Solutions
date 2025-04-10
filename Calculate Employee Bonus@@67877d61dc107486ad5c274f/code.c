@@ -13,7 +13,7 @@ int main() {
     for (i = 0; i < n; i++) {
         scanf("%d %s %f", &bonus[i].number, &bonus[i].name, &bonus[i].salary);
     } 
-    if 
+
 
     
     for (i = 0; i < n; i++) {
