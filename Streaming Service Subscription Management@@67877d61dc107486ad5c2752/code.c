@@ -19,15 +19,15 @@ int main(){
 
         if(strcmp(service[i].subscription,"Basic")==0){
             count_basic++;
-            revenue_basic = service[i].revenue;
+            revenue_basic += service[i].revenue;
         }
         else if(strcmp(service[i].subscription,"Standard")==0){
             count_standard++;
-            revenue_standard = service[i].revenue;
+            revenue_standard += service[i].revenue;
         }
         else if(strcmp(service[i].subscription,"Premium")==0){
             count_premium++;
-            revenue_premium = service[i].revenue;
+            revenue_premium += service[i].revenue;
         }
     }
     printf("Basic: %d Users, Revenue: %.2f;",count_basic,revenue_basic);
