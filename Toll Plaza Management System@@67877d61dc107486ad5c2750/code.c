@@ -27,7 +27,7 @@ int main() {
         }
     }
 
-    printf("Cars: %d, Trucks: %d, Bikes: %d\n", carToll, truckToll, bikeToll);
+    printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f\n", carToll, truckToll, bikeToll);
 
     return 0;
 }
