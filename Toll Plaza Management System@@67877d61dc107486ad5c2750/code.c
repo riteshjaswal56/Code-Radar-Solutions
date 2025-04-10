@@ -11,13 +11,13 @@ int main(){
     for (i=0 ; i<n ; i++){
         scanf("%s %s %d",&plaza[i].number,&plaza[i].vehicle,&plaza[i].toll);
     }
-        if (strcmp(plaza[i].vehicle, "Car") == 0) {
+        if (plaza[i].vehicle, "Car" == 0) {
             carToll += plaza[i].toll;
             carCount++;
-        } else if (strcmp(plaza[i].vehicle, "Truck") == 0) {
+        } else if (plaza[i].vehicle, "Truck" == 0) {
             truckToll += plaza[i].toll;
             truckCount++;
-        } else if (strcmp(plaza[i].vehicle, "Bike") == 0) {
+        } else if (plaza[i].vehicle, "Bike" == 0) {
             bikeToll += plaza[i].toll;
             bikeCount++;
         }
