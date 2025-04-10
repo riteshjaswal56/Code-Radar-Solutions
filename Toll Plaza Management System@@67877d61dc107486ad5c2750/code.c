@@ -14,7 +14,7 @@ int main(){
 
     printf("Cars: %.2f, ",plaza[i].vehicle);
     printf("Trucks: %.2f, ",plaza[i].vehicle);
-    printf("Bikes: %.2f, ",plaza[i].vehicle);
+    printf("Bikes: %.2f ",plaza[i].vehicle);
     
     return 0;
 }
