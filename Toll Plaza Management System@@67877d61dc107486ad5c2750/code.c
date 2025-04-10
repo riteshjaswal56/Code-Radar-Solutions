@@ -13,6 +13,8 @@ int main(){
     }
     for (i=0 ; i<n ; i++){
         printf("Cars: %.2f, ",plaza[i].vehicle);
+        printf("Trucks: %.2f, ",plaza[i].vehicle);
+        printf("Bikes: %.2f, ",plaza[i].vehicle);
     }
     return 0;
 }
