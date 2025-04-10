@@ -7,7 +7,6 @@ struct Employee{
 
 int main() {
     int n, i ;
-    int data ;
     scanf("%d", &n);
     struct Employee bonus[n];
     for (i = 0; i < n; i++) {
