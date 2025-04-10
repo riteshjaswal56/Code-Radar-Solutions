@@ -24,9 +24,7 @@ int main() {
         else{
             grade = 'C';
         }
-        printf("Roll Number: %d,", students[i].rollNumber);
-        printf(" Name: %s,", students[i].name);
-        printf(" Grade: %s\n", grades);
+        printf("Roll Number: %d, Name: %s, Grade: %c\n", students[i].rollNumber, students[i].name, grade);
     }
 
     return 0;
