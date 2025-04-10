@@ -12,9 +12,9 @@ int main(){
         scanf("%s %s %d",&plaza[i].number,&plaza[i].vehicle,&plaza[i].toll);
     }
 
-    printf("Cars: %.2f, ",float(plaza[i].toll));
-    printf("Trucks: %.2f, ",float(plaza[i].toll));
-    printf("Bikes: %.2f ",float(plaza[i].toll));
+    printf("Cars: %.2f, ",plaza[i].toll);
+    printf("Trucks: %.2f, ",plaza[i].toll);
+    printf("Bikes: %.2f ",plaza[i].toll);
     
     return 0;
 
