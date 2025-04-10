@@ -9,7 +9,7 @@ int main(){
     scanf("%d",&n);
     struct management plaza[n];
     for (i=0 ; i<n ; i++){
-        scnaf("%s %s %d",&plaza[i].number,&plaza[i].vehicle,&plaza[i].toll);
+        scanf("%s %s %d",&plaza[i].number,&plaza[i].vehicle,&plaza[i].toll);
     }
     for (i=0 ; i<n ; i++){
         printf("Cars: %.2f, ",plaza[i].vehicle);
