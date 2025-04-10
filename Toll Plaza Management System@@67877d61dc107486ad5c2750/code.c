@@ -11,20 +11,10 @@ int main(){
     for (i=0 ; i<n ; i++){
         scanf("%s %s %d",&plaza[i].number,&plaza[i].vehicle,&plaza[i].toll);
     }
-        if (plaza[i].vehicle, "Car" == 0) {
-            carToll += plaza[i].toll;
-            carCount++;
-        } else if (plaza[i].vehicle, "Truck" == 0) {
-            truckToll += plaza[i].toll;
-            truckCount++;
-        } else if (plaza[i].vehicle, "Bike" == 0) {
-            bikeToll += plaza[i].toll;
-            bikeCount++;
-        }
 
-    printf("Cars: %.2f, ",plaza[i].toll);
-    printf("Trucks: %.2f, ",plaza[i].toll);
-    printf("Bikes: %.2f ",plaza[i].toll);
+    printf("Cars: %.2f, ",float(plaza[i].toll));
+    printf("Trucks: %.2f, ",float(plaza[i].toll));
+    printf("Bikes: %.2f ",float(plaza[i].toll));
     
     return 0;
 
