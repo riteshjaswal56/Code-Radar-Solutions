@@ -14,15 +14,15 @@ int main() {
     }
 
     for (i = 0; i < n; i++) {
-        char grades;
+        char grade;
         if(students[i].marks >=85 ){
-            grades = 'A' ; 
+            grade = 'A' ; 
         }
-        else if(students[i].marks >=70 && students[i].marks <=84){
-            grades = 'B';
+        else if(students[i].marks >=70 ){
+            grade = 'B';
         }
         else{
-            grades = 'C';
+            grade = 'C';
         }
         printf("Roll Number: %d,", students[i].rollNumber);
         printf(" Name: %s,", students[i].name);
