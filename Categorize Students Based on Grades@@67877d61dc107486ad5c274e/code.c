@@ -14,6 +14,7 @@ int main() {
     }
 
     for (i = 0; i < n; i++) {
+        char = grades[10];
         if(students[i].marks >=85 ){
             grades = 'A' ; 
         }
