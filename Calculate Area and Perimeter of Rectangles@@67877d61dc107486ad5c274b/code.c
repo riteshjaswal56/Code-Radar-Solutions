@@ -8,6 +8,7 @@ struct Rectangle {
 
 int main() {
     int n;
+    float area , perimeter;
     scanf("%d", &n);
     struct Rectangle rectangles[n];
 
