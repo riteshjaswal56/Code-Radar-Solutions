@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 struct management{
     char name [50];
     char subscription[50];
