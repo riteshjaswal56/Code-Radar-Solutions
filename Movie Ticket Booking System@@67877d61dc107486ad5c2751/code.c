@@ -1,33 +1,33 @@
+
 #include <stdio.h>
 #include <string.h>
 
-struct Vehicle {
-    char number[50];
-    char type[50];
-    int toll;
+struct MovieTicket {
+    char movieName[50];
+    char ticketType[20];
+    float price;
 };
 
 int main() {
     int n;
     scanf("%d", &n);
 
-    struct Vehicle vehicles[n];
-
-    int carToll = 0, truckToll = 0, bikeToll = 0;
+    struct MovieTicket tickets[n];
+    float standardTotal = 0, premiumTotal = 0, vipTotal = 0;
 
     for (int i = 0; i < n; i++) {
-        scanf("%s %s %d", vehicles[i].number, vehicles[i].type, &vehicles[i].toll);
+        scanf("%s %s %f", tickets[i].movieName, tickets[i].ticketType, &tickets[i].price);
 
-        if (strcmp(vehicles[i].type, "Car") == 0) {
-            carToll += vehicles[i].toll;
-        } else if (strcmp(vehicles[i].type, "Truck") == 0) {
-            truckToll += vehicles[i].toll;
-        } else if (strcmp(vehicles[i].type, "Bike") == 0) {
-            bikeToll += vehicles[i].toll;
+        if (strcmp(tickets[i].ticketType, "Standard") == 0) {
+            standardTotal += tickets[i].price;
+        } else if (strcmp(tickets[i].ticketType, "Premium") == 0) {
+            premiumTotal += tickets[i].price;
+        } else if (strcmp(tickets[i].ticketType, "VIP") == 0) {
+            vipTotal += tickets[i].price;
         }
     }
 
-    printf("Cars: %d, Trucks: %d, Bikes: %d\n", carToll, truckToll, bikeToll);
+    printf("Standard: %.2f, Premium: %.2f, VIP: %.2f\n", standardTotal, premiumTotal, vipTotal);
 
     return 0;
 }
