@@ -1,33 +1,32 @@
 #include <stdio.h>
+
 struct Student {
     int rollNumber;
     char name[50];
-    char marks[50];
+    float marks;  // Changed to float
 };
 
 int main() {
     int n, i;
     scanf("%d", &n);
     struct Student students[n];
+
     for (i = 0; i < n; i++) {
-        scanf("%d %s %s", &students[i].rollNumber, students[i].name, &students[i].marks);
+        scanf("%d %s %f", &students[i].rollNumber, students[i].name, &students[i].marks);
     }
 
     for (i = 0; i < n; i++) {
-        char grades[10];
-        if(students[i].marks >=85 ){
-            grades = 'A' ; 
+        char grade;  // Use a char for grade
+        if (students[i].marks >= 85) {
+            grade = 'A';
+        } else if (students[i].marks >= 70) {
+            grade = 'B';
+        } else {
+            grade = 'C';
         }
-        else if(students[i].marks >=70 && students[i].marks <=84){
-            grades = 'B';
-        }
-        else{
-            grades = 'C';
-        }
-        printf("Roll Number: %d,", students[i].rollNumber);
-        printf(" Name: %s,", students[i].name);
-        printf(" Grade: %s\n", grades);
+        printf("Roll Number: %d, Name: %s, Grade: %c\n", students[i].rollNumber, students[i].name, grade);
     }
 
     return 0;
 }
+
