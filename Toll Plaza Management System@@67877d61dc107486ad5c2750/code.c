@@ -1,33 +1,21 @@
 #include <stdio.h>
-#include <string.h>
-
-struct Vehicle {
-    char number[50];
-    char type[50];
+struct management{
+    char number [50];
+    char vehicle [50];
     int toll;
 };
-
-int main() {
-    int n;
-    scanf("%d", &n);
-
-    struct Vehicle vehicles[n];
-
-    int carToll = 0, truckToll = 0, bikeToll = 0;
-
-    for (int i = 0; i < n; i++) {
-        scanf("%s %s %d", vehicles[i].number, vehicles[i].type, &vehicles[i].toll);
-
-        if (strcmp(vehicles[i].type, "Car") == 0) {
-            carToll += vehicles[i].toll;
-        } else if (strcmp(vehicles[i].type, "Truck") == 0) {
-            truckToll += vehicles[i].toll;
-        } else if (strcmp(vehicles[i].type, "Bike") == 0) {
-            bikeToll += vehicles[i].toll;
-        }
+int main(){
+    int n,i;
+    scanf("%d",&n);
+    struct management plaza[n];
+    for (i=0 ; i<n ; i++){
+        scanf("%s %s %d",&plaza[i].number,&plaza[i].vehicle,&plaza[i].toll);
     }
 
-    printf("Cars: %.2f, Trucks: %.2f, Bikes: %.2f\n", carToll, truckToll, bikeToll);
-
+    printf("Cars: %d, ",plaza[i].toll);
+    printf("Trucks: %d, ",plaza[i].toll);
+    printf("Bikes: %d ",plaza[i].toll);
+    
     return 0;
+
 }
